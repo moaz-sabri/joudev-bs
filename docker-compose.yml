@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  # PHP Service
+  php:
+    image: php:8.2-apache
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      SERVER_PORT: 5000 # Set the port number you want to access

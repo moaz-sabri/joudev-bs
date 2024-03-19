@@ -1,0 +1,58 @@
+RewriteEngine On
+
+Options -Indexes
+
+RewriteCond %{HTTP_HOST} ^https://joude.com[nc]
+RewriteRule ^(.*)$ http://www.https://joude.com/$1 [r=301,nc]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{HTTP:Authorization} .+
+RewriteRule ^ - [E=HTTP_AUTHORIZATION:%0]
+
+# Allow access to the app folder only from localhost or specific IP address
+RewriteRule ^app(/bootstrap/.*)?$ - [F]
+RewriteRule ^app(/utilities/.*)?$ - [F]
+RewriteRule ^app(/templates/.*)?$ - [F]
+RewriteRule ^app(/modules/.*)?$ - [F]
+
+# Redirect requests to the public folder
+RewriteRule ^((?!public/).*)$ public/index.html/$1 [L,NC]
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault "access plus 1 year"
+</IfModule>
+
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<FilesMatch "\.html$">
+SetHandler application/x-httpd-php
+  # Header set Service-Worker-Allowed "public/"
+</FilesMatch>
+
+<FilesMatch "\.(py|cs|rb|pl|cgi|sh|bash|php)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(html|htm|css|js|png|jpg|jpeg|gif|webp|svg|pdf|doc|json|xml|ico)$">
+    Order deny,allow
+    Allow from all
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript multipart/form-data application/xml
+</IfModule>
+
+<Files "favicon.ico">
+  Allow from all
+</Files>
+# Serve favicon.ico
+<Files "/public/favicon.ico">
+    ErrorDocument 404 /public/favicon.ico
+</Files>
