@@ -98,7 +98,7 @@ Afterward, remember to integrate the new language's abbreviation into the existi
 - Eliminated the Web class and introduced a new routing logic.
 - Introduced a new FailResponse class to manage error pages.
 - Included default pages such as policy and impression.
-- Enhanced the design of Navbar, Footer, and index.
+- Updated Navbar, Footer, and index Design with the new Bootstrap library for enhanced styling and icons.
 
 Your project is now fully configured and primed for further expansion and refinement in the next stages of development.
 
