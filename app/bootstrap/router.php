@@ -6,15 +6,30 @@ class Router
 {
     private $routes = [];
 
-    private function hendlerMethod($method, $path, $className, $action)
+
+    public function get($path, $className, $action)
     {
-        if (is_array($path)) :
-            foreach ($path as $key => $p) {
-                $this->addRoute($method, $p, $className, $action);
-            }
-        else :
-            $this->addRoute($method, $path, $className, $action);
-        endif;
+        $this->addRoute('GET', $path, $className, $action);
+    }
+
+    public function post($path, $className, $action)
+    {
+        $this->addRoute('POST', $path, $className, $action);
+    }
+
+    public function put($path, $className, $action)
+    {
+        $this->addRoute('PUT', $path, $className, $action);
+    }
+
+    public function delete($path, $className, $action)
+    {
+        $this->addRoute('DELETE', $path, $className, $action);
+    }
+
+    public function patch($path, $className, $action)
+    {
+        $this->addRoute('PATCH', $path, $className, $action);
     }
 
     private function addRoute($method, $path, $className, $action)
@@ -25,7 +40,8 @@ class Router
 
         $this->routes[$method][$pattern] = [
             'handler' => function ($request) use ($className, $action) {
-                return $this->buildViewer($request, $className, $action);
+                $output = new Output();
+                return $output->build($className->$action($request));
             },
             'params' => $routeParams
         ];
@@ -45,37 +61,6 @@ class Router
     {
         preg_match_all('|{([^\/]+)}|', $path, $matches);
         return $matches[1];
-    }
-
-    private function buildViewer($request, $className, $action)
-    {
-        $output = new Output();
-        $response = $className->$action($request);
-        if (isset($response->view)) :
-            return $output->view($response);
-        else :
-            return $response;
-        endif;
-    }
-
-    public function get($path, $className, $action)
-    {
-        $this->hendlerMethod('GET', $path, $className, $action);
-    }
-
-    public function post($path, $className, $action)
-    {
-        $this->hendlerMethod('POST', $path, $className, $action);
-    }
-
-    public function put($path, $className, $action)
-    {
-        $this->hendlerMethod('PUT', $path, $className, $action);
-    }
-
-    public function delete($path, $className, $action)
-    {
-        $this->hendlerMethod('DELETE', $path, $className, $action);
     }
 
     public function dispatch($request)
@@ -102,17 +87,14 @@ class Router
 
                     if ($response instanceof Response) {
                         return $response;
-                    } elseif (is_array($response)) {
-                        return new Response(...$response);
                     } else {
-                        // Handle invalid response
-                        return new Response('Internal Server Error Router', 500);
+
+                        return new FailResponse(500);
                     }
                 }
             }
         }
 
-        // Handle 404 Not Found
-        return new Response('/404?url=' . $path, 301);
+        return new FailResponse(404);
     }
 }

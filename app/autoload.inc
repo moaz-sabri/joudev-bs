@@ -9,7 +9,9 @@ require_once dirname(__FILE__) . '/bootstrap/configs.php';
 header("Content-Security-Policy: default-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;");
 setcookie('source', DOMAIN_SOURCE, time() + 24 * 60 * 60, '/');  // Expires in 16 Days
 
-use App\Bootstrap\Web;
+use App\Bootstrap\Request;
+use App\Bootstrap\Router;
+use App\Bootstrap\Routes;
 use App\Bootstrap\Security;
 
 /**
@@ -37,18 +39,12 @@ spl_autoload_register(function ($className): void {
         // Build the full path to the class file
         require_once WEBROOT . $className;
 
-        if (LOADINGPROCESS) : echo "<br> $className is exist";
-        endif;
-
+        $message =  "<br> $className is exist ";
     else :
-        $message = "Sorry, the ({$className}) requested module is not defined or does not exist. Please check the module name and try again";
-
-        error_log("Class file not found: $className");
-
-        if (LOADINGPROCESS) echo "Class file not found: $className";
-
-        exit;
+        $message = "Class file not found: $className";
     endif;
+
+    if (LOADINGPROCESS) echo $message;
 });
 
 // Implement request rate limiting logic
@@ -56,8 +52,27 @@ $isSpam = Security::isSpam();
 
 // Check if the request is not spam or in DEBUGMODE
 if (!$isSpam || DEBUGMODE) :
-    // if (!$isSpam) :
-    $router = new Web;
+    $router = new Router();
+
+    $routes = new Routes();
+    $routes->loadModules('Extends', $router);
+    $routes->loadModules('Modules', $router);
+
+    // Simulate a request
+    $requestMethod = $_SERVER['REQUEST_METHOD'];
+    $requestPath = $_SERVER['REQUEST_URI'];
+    $request =  new Request($requestMethod, $requestPath);
+    $response = $router->dispatch($request);
+    $response->send();
+
+    // var_dump($request->path);
+    // var_dump($request->method);
+    // var_dump($request->data);
+    // var_dump($response->getResponse());
+    // var_dump($response->getStatusCode());
+
+    if (LOADINGPROCESS) : echo "Ready to preview!";
+    endif;
 
 else :
     // Log or handle the spam attempt (e.g., block the IP)

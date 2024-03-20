@@ -24,29 +24,37 @@ class Output
         if (LOADINGPROCESS) debug("AutoLoader");
     }
 
-    public function view($obj)
+    public function build($response)
     {
 
-        if (!isset($obj->theme)) $obj->theme = 'default';
+        Response::setResponse($response);
+
+        if (!isset($response->view)) :
+            return new JsonResponse($response);
+        endif;
+
+        if (!isset($response->theme)) $response->theme = 'default';
 
         // Autoload components
-        $this->loader->autoloadComponents($obj);
+        $this->loader->autoloadComponents($response);
 
         $this->device = $this->detectDevice();
 
-        $viewFile = $this->resource . $obj->view . '.blade.php';
+        $viewFile = $this->resource . $response->view . '.blade.php';
 
         if (file_exists($viewFile)) {
 
             // Extract the data to variables
-            $this->data = (object) $obj->data;
+            if (isset($response->data)) :
+                $this->data = (object) $response->data;
+            endif;
 
             // Start output buffering
             ob_start();
 
             // Generate HTML
-            $this->generateHtmlHead($obj);
-            $this->generateHtmlBody($viewFile, $obj);
+            $this->generateHtmlHead($response);
+            $this->generateHtmlBody($viewFile, $response);
 
             // Get the content of the buffer and clean it
             $content = ob_get_clean();
@@ -54,9 +62,9 @@ class Output
             if (LOADINGPROCESS) debug("loaded file {$viewFile}");
 
             // Return the rendered content
-            return new Response($content);
+            return new Response($this->minifyHTML($content), $response->statusCode);
         } else {
-            return "View '$obj->view' not found";
+            return "View '$response->view' not found";
         }
     }
 
@@ -76,7 +84,8 @@ class Output
 
         $minified = preg_replace($search, $replace, $html);
 
-        return !DEBUGMODE ? $html : $minified;
+        // return $minified;
+        return DEBUGMODE ? $html : $minified;
     }
 
     private function generateHtmlHead($obj)

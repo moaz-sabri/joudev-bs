@@ -91,8 +91,7 @@ if (PRODUCTION) :
     define('DOMAIN_SOURCE', 'https://webbase.joudev.com'); // Replace '/path/to/your/project' with the actual source path of your project
 else :
     // Source Path of the Project
-    // define('DOMAIN_SOURCE', "http://localhost:5000"); // Replace '/path/to/your/project' with the actual source path of your project
-    define('DOMAIN_SOURCE', "http://localhost/joudev-zero"); // Replace '/path/to/your/project' with the actual source path of your project
+    define('DOMAIN_SOURCE', "http://localhost:5000"); // Replace '/path/to/your/project' with the actual source path of your project
 endif;
 
 // Store the current URL in the session

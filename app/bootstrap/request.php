@@ -2,10 +2,6 @@
 
 namespace App\Bootstrap;
 
-use App\Extends\Translation\Loader\LanguageLoader;
-use App\Extends\AccessControl\Loader\CryptLoader;
-use App\Extends\AccessControl\Loader\PermissionLoader;
-
 class Request
 {
     public $path;
