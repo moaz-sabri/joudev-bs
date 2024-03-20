@@ -1,11 +1,11 @@
-### Project Name: Joudev-Zero
+### Project Name: Joudev-Static
 
-Joudev-Zero is an open-source PHP template designed to facilitate frontend and backend development, from simple to large-scale projects. It prioritizes ease of use without compromising functionality, employing modular packages for implementing new features seamlessly within the MVC architecture.
+Joudev is an open-source PHP template designed to facilitate frontend and backend development, from simple to large-scale projects. It prioritizes ease of use without compromising functionality, employing modular packages for implementing new features seamlessly within the MVC architecture.
 
 #### Getting Started
 
 1. **Download the Project:**
-   Clone or download the project from [GitHub](https://github.com/moaz-sabri/joudev-zero.git).
+   Clone or download the project from [GitHub](https://github.com/moaz-sabri/joudev-static.git).
 
 2. **Build with Docker:**
    Ensure Docker is installed on your device, then execute the following command:
@@ -73,6 +73,35 @@ public function index()
 ## Create an index.blade.php file in App\Modules\Public\views
 
 Create an `index.blade.php` file in `App\Modules\Public\views` to add the layout.
+
+## New Addition
+
+### Translation Extension
+
+To use translation, call in the HTML code:
+
+```html
+<h1><?= $this->label->get('word') ?></h1>
+```
+
+where 'word' is defined in /storage/languages/en/index.xml for English. You can manually add new words to the XML file like:
+
+```xml
+<phrase name="newword">newWord</phrase>
+```
+
+and add new languages like `/storage/languages/xLanguage/index.xml`. Then add the new short name to existLanguages in `\app\extends\translation\loader\languageloader.php`.
+
+## New Updates
+
+- Removed Web class and implemented new logic for Routes.
+- Added a new class to FailResponse to return error pages.
+- Added default pages like policy and impression.
+- Updated Navbar, Footer, and index Design.
+
+Now, you have a complete simple project set up and ready to be expanded upon and updated for the next level of development.
+
+<!-- ___________________________ -->
 
 Now, you have a complete simple project set up and ready to be expanded upon and updated for the next level of development.
 
