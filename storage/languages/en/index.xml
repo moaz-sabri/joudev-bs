@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language>
+    <phrase name="dir">ltr</phrase>
+    <phrase name="lang">en</phrase>
+    <phrase name="en">english</phrase>
+    <phrase name="de">deutsch</phrase>
+    <phrase name="ar">العربية</phrase>
+
+    <phrase name="home">home</phrase>
+
+    <phrase name="features">features</phrase>
+    <phrase name="pricing">pricing</phrase>
+    <phrase name="services">services</phrase>
+    <phrase name="policy">policy</phrase>
+    <phrase name="faqs">faqs</phrase>
+    <phrase name="help">help</phrase>
+    <phrase name="impression">impression</phrase>
+    <phrase name="language">language</phrase>
+
+    <phrase name="cpanel">cpanel</phrase>
+    <phrase name="my_profile">my profile</phrase>
+    <phrase name="signout">signout</phrase>
+    <phrase name="dashboard">dashboard</phrase>
+    <phrase name="analysis">analysis</phrase>
+    <phrase name="users">users</phrase>
+    <phrase name="security">security</phrase>
+    <phrase name="translation">translation</phrase>
+
+    <phrase name="storage">storage</phrase>
+    <phrase name="files">files</phrase>
+    <phrase name="docs">docs</phrase>
+
+    <phrase name="mails">mails</phrase>
+    <phrase name="blacklist">blacklist</phrase>
+    <phrase name="history">history</phrase>
+    <phrase name="inbox">inbox</phrase>
+
+    <phrase name="control">control</phrase>
+    <phrase name="filename">filename</phrase>
+    <phrase name="logs">logs</phrase>
+    <phrase name="activity">activity</phrase>
+    <phrase name="traffic">traffic</phrase>
+    <phrase name="local_record">local record</phrase>
+
+    <phrase name="timeline">timeline</phrase>
+    <phrase name="edit_profile">edit profile</phrase>
+    <phrase name="settings">settings</phrase>
+    <phrase name="gallery">gallery</phrase>
+    <phrase name="profile_details">profile details</phrase>
+    <phrase name="last_active">last active</phrase>
+    <phrase name="group">group</phrase>
+    <phrase name="registered">registered</phrase>
+    <phrase name="user_store">user store</phrase>
+    <phrase name="store">store</phrase>
+
+    <phrase name="user_permissions">user permissions</phrase>
+    <phrase name="view_cpanel_dashboard">view cpanel dashboard</phrase>
+    <phrase name="view_cpanel_mailshistory">view cpanel mail history</phrase>
+    <phrase name="mailer">mailer</phrase>
+    <phrase name="mail_details">mail details</phrase>
+    <phrase name="mail_history">mail history</phrase>
+    <phrase name="view_cpanel_mailsbox">view cpanel mails box</phrase>
+    <phrase name="view_cpanel_blacklist">view cpanel blacklist</phrase>
+    <phrase name="view_cpanel_mail_preview">view cpanel mail preview</phrase>
+    <phrase name="view_cpanel_record">view cpanel record</phrase>
+    <phrase name="view_cpanel_activity">view cpanel activity</phrase>
+
+    <phrase name="user">user</phrase>
+    <phrase name="add_user">add user</phrase>
+    <phrase name="view_manger_users">view manager users</phrase>
+    <phrase name="view_manger_user">view manager user</phrase>
+    <phrase name="delete_manger_user">delete manager user</phrase>
+    <phrase name="create_manger_user">create manager user</phrase>
+    <phrase name="update_manger_user">update manager user</phrase>
+    <phrase name="switsh_manger_user_active">switch manager user active</phrase>
+    <phrase name="view_visitor_profile">view visitor profile</phrase>
+    <phrase name="delete_self_user">delete self user</phrase>
+    <phrase name="update_self_user">update self user</phrase>
+    <phrase name="activity_self_user">activity self user</phrase>
+
+    <phrase name="security">security</phrase>
+    <phrase name="groups">groups</phrase>
+    <phrase name="group_name">group name</phrase>
+    <phrase name="group_description">group description</phrase>
+    <phrase name="permission_store">permission store</phrase>
+    <phrase name="permission_groups">permission groups</phrase>
+    <phrase name="permission_group">permission group</phrase>
+    <phrase name="view_manger_groups">view manager groups</phrase>
+    <phrase name="delete_manger_permission_group">delete manager permission group</phrase>
+    <phrase name="create_manger_permission_group">create manager permission group</phrase>
+    <phrase name="update_manger_permission_group">update manager permission group</phrase>
+    <phrase name="switsh_manger_permission_group_active">switch manager permission group active</phrase>
+
+    <phrase name="translation_editor">translation editor</phrase>
+    <phrase name="view_manger_translation">view manager translation</phrase>
+    <phrase name="delete_manger_translation">delete manager translation</phrase>
+    <phrase name="create_manger_translation">create manager translation</phrase>
+    <phrase name="update_manger_translation">update manager translation</phrase>
+
+    <phrase name="view_manger_traffic">view manager traffic</phrase>
+    <phrase name="view_manger_user_traffic">view manager user traffic</phrase>
+    <phrase name="delete_manger_traffic">delete manager traffic</phrase>
+    <phrase name="traffic_self_user">traffic self user</phrase>
+
+    <phrase name="view_manger_storage">view manager storage</phrase>
+    <phrase name="delete_manger_file">delete manager file</phrase>
+    <phrase name="upload_manger_file">upload manager file</phrase>
+    <phrase name="upload_self_file">upload self file</phrase>
+
+    <phrase name="record">record</phrase>
+    <phrase name="view_manger_logs_record">view manager logs record</phrase>
+    <phrase name="view_manger_activity_record">view manager activity record</phrase>
+    <phrase name="view_manger_user_record">view manager user record</phrase>
+
+    <phrase name="profile_image">profile image</phrase>
+    <phrase name="profile_setting">profile setting</phrase>
+    <phrase name="firstname">first name</phrase>
+    <phrase name="lastname">last name</phrase>
+    <phrase name="username">username</phrase>
+    <phrase name="profile_security">profile security</phrase>
+    <phrase name="security_group">security group</phrase>
+    <phrase name="telnumber">telephone number</phrase>
+    <phrase name="activation">activation</phrase>
+    <phrase name="password">password</phrase>
+    <phrase name="current_password">current password</phrase>
+    <phrase name="new_password">new password</phrase>
+    <phrase name="confirm_password">confirm password</phrase>
+
+    <!-- Buttons -->
+    <phrase name="upload">upload</phrase>
+    <phrase name="save">save</phrase>
+    <phrase name="update">update</phrase>
+    <phrase name="send">send</phrase>
+    <phrase name="delete">delete</phrase>
+    <phrase name="next">next</phrase>
+    <phrase name="prev">previous</phrase>
+    <phrase name="submit">submit</phrase>
+
+    <!-- Labels -->
+    <phrase name="text">text</phrase>
+    <phrase name="key">key</phrase>
+    <phrase name="value">value</phrase>
+    <phrase name="type">type</phrase>
+    <phrase name="size">size</phrase>
+    <phrase name="owner">owner</phrase>
+    <phrase name="status">status</phrase>
+    <phrase name="code">code</phrase>
+    <phrase name="ip_address">IP address</phrase>
+    <phrase name="url">URL</phrase>
+    <phrase name="session">session</phrase>
+    <phrase name="extension">extension</phrase>
+    <phrase name="created">created</phrase>
+    <phrase name="period">period</phrase>
+    <phrase name="description">description</phrase>
+    <phrase name="sort_subject">sort subject</phrase>
+    <phrase name="sort_code">sort code</phrase>
+    <phrase name="sort_url">sort URL</phrase>
+    <phrase name="sort_ip_address">sort IP address</phrase>
+    <phrase name="sort_owner">sort owner</phrase>
+    <phrase name="sort_extension">sort extension</phrase>
+    <phrase name="sort_name">sort name</phrase>
+    <phrase name="sort_type">sort type</phrase>
+    <phrase name="sort_status">sort status</phrase>
+    <phrase name="sort_email">sort email</phrase>
+    <phrase name="sort_create">sort created</phrase>
+    <phrase name="today">today</phrase>
+    <phrase name="last_week">last week</phrase>
+    <phrase name="last_month">last month</phrase>
+
+    <phrase name="my_name">Moaz Sabri</phrase>
+    <phrase name="hero_quote">I,am Full Stack Developer</phrase>
+
+    <phrase name="about">about</phrase>
+    <phrase name="about_me">about me</phrase>
+    <phrase name="about_summary">A skilled and innovative programmer with over 5 years of experience in various domains, including database management, website development using frameworks, and proficiency in PHP</phrase>
+    <phrase name="about_more">you can continue to read about </phrase>
+    <phrase name="about_more_link">me here</phrase>
+    <phrase name="work">work</phrase>
+    <phrase name="city">city</phrase>
+    <phrase name="age">age</phrase>
+    <phrase name="phone">phone</phrase>
+
+    <phrase name="my_jobtitle">Full Stack Developer</phrase>
+    <phrase name="my_address">Austria</phrase>
+    <phrase name="my_age">30</phrase>
+    <phrase name="my_email">contact@joudev.com</phrase>
+    <phrase name="my_phone">+43 </phrase>
+</language>

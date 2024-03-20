@@ -4,6 +4,7 @@ namespace App\Bootstrap;
 
 use App\Utilities\Informations;
 use App\Bootstrap\Loader\AutoLoader;
+use App\Extends\Translation\Loader\LanguageLoader;
 
 class Output
 {
@@ -43,6 +44,7 @@ class Output
         $viewFile = $this->resource . $response->view . '.blade.php';
 
         if (file_exists($viewFile)) {
+            $this->loadTranslation($response);
 
             // Extract the data to variables
             if (isset($response->data)) :
@@ -157,5 +159,22 @@ class Output
         </html>
 <?php
 
+    }
+
+
+    private function loadTranslation($obj)
+    {
+        // Initialize the language loader and determine the language to use
+        $languageLoader = new LanguageLoader();
+        $languageLoader->load();
+
+        // Render the view and pass language, parameters, device, and metadata
+        if (isset($obj->translation)) :
+            $languageLoader->moreLabels($obj->translation);
+        endif;
+
+        $this->label =  $languageLoader;
+
+        if (LOADINGPROCESS) debug("loaded loadTranslation");
     }
 }

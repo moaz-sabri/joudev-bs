@@ -2,6 +2,8 @@
 
 namespace App\Bootstrap;
 
+use App\Extends\Translation\Loader\LanguageLoader;
+
 class Request
 {
     public $path;
@@ -14,7 +16,7 @@ class Request
     public function __construct($method, $path)
     {
         $this->method = $method;
-        $this->path = $path;
+        $this->path = $this->getTranslate($path);
         $this->data = $this->getData($path);
         $this->parsePath();
         $this->parseQueryParams();
@@ -82,6 +84,22 @@ class Request
         endif;
 
         $this->queryParams = $queryParams;
+    }
+
+    private function getTranslate($path)
+    {
+        $pathSegments = explode('/', trim($path, '/'));
+
+        if (in_array($pathSegments[0], LanguageLoader::$existLanguages)) :
+            $_SESSION['language'] = $pathSegments[0];
+            array_shift($pathSegments);
+        else :
+            if (!isset($_SESSION['language'])) :
+                $_SESSION['language'] = 'en';
+            endif;
+        endif;
+
+        return '/' . implode('/', $pathSegments);
     }
 
     public function getMethod()

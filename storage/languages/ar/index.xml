@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language>
+    <phrase name="dir">rtl</phrase>
+    <phrase name="lang">ar</phrase>
+    <phrase name="en">english</phrase>
+    <phrase name="de">deutsch</phrase>
+    <phrase name="ar">العربية</phrase>
+
+    <phrase name="home">الصفحة الرئيسية</phrase>
+    <phrase name="features">الميزات</phrase>
+    <phrase name="pricing">التسعير</phrase>
+    <phrase name="services">الخدمات</phrase>
+    <phrase name="policy">السياسة</phrase>
+    <phrase name="faqs">الأسئلة الشائعة</phrase>
+    <phrase name="help">المساعدة</phrase>
+    <phrase name="impression">الانطباع</phrase>
+    <phrase name="language">اللغة</phrase>
+
+    <phrase name="cpanel">لوحة التحكم</phrase>
+    <phrase name="my_profile">ملفي الشخصي</phrase>
+    <phrase name="signout">تسجيل الخروج</phrase>
+    <phrase name="dashboard">لوحة القيادة</phrase>
+    <phrase name="analysis">التحليل</phrase>
+    <phrase name="users">المستخدمون</phrase>
+    <phrase name="security">الأمان</phrase>
+    <phrase name="translation">الترجمة</phrase>
+
+    <phrase name="storage">التخزين</phrase>
+    <phrase name="files">الملفات</phrase>
+    <phrase name="docs">المستندات</phrase>
+
+    <phrase name="mails">الرسائل الإلكترونية</phrase>
+    <phrase name="blacklist">القائمة السوداء</phrase>
+    <phrase name="history">التاريخ</phrase>
+    <phrase name="inbox">صندوق الوارد</phrase>
+
+    <phrase name="control">التحكم</phrase>
+    <phrase name="filename">اسم الملف</phrase>
+    <phrase name="logs">السجلات</phrase>
+    <phrase name="activity">النشاط</phrase>
+    <phrase name="traffic">المرور</phrase>
+    <phrase name="local_record">السجل المحلي</phrase>
+
+    <phrase name="timeline">الجدول الزمني</phrase>
+    <phrase name="edit_profile">تحرير الملف الشخصي</phrase>
+    <phrase name="settings">الإعدادات</phrase>
+    <phrase name="gallery">المعرض</phrase>
+    <phrase name="profile_details">تفاصيل الملف الشخصي</phrase>
+    <phrase name="last_active">آخر نشاط</phrase>
+    <phrase name="group">المجموعة</phrase>
+    <phrase name="registered">مسجل</phrase>
+    <phrase name="user_store">تخزين المستخدم</phrase>
+    <phrase name="store">تخزين</phrase>
+
+    <phrase name="user_permissions">صلاحيات المستخدم</phrase>
+    <phrase name="view_cpanel_dashboard">عرض لوحة التحكم</phrase>
+    <phrase name="view_cpanel_mailshistory">عرض تاريخ البريد في لوحة التحكم</phrase>
+    <phrase name="mailer">البريد</phrase>
+    <phrase name="mail_details">تفاصيل البريد</phrase>
+    <phrase name="mail_history">تاريخ البريد</phrase>
+    <phrase name="view_cpanel_mailsbox">عرض صندوق البريد في لوحة التحكم</phrase>
+    <phrase name="view_cpanel_blacklist">عرض القائمة السوداء في لوحة التحكم</phrase>
+    <phrase name="view_cpanel_mail_preview">عرض معاينة البريد في لوحة التحكم</phrase>
+    <phrase name="view_cpanel_record">عرض السجل في لوحة التحكم</phrase>
+    <phrase name="view_cpanel_activity">عرض النشاط في لوحة التحكم</phrase>
+
+    <phrase name="user">المستخدم</phrase>
+    <phrase name="add_user">إضافة مستخدم</phrase>
+    <phrase name="view_manger_users">عرض مدير المستخدمين</phrase>
+    <phrase name="view_manger_user">عرض مدير المستخدم</phrase>
+    <phrase name="delete_manger_user">حذف مدير المستخدم</phrase>
+    <phrase name="create_manger_user">إنشاء مدير المستخدم</phrase>
+    <phrase name="update_manger_user">تحديث مدير المستخدم</phrase>
+    <phrase name="switsh_manger_user_active">تفعيل مدير المستخدم</phrase>
+    <phrase name="view_visitor_profile">عرض ملف زائر</phrase>
+    <phrase name="delete_self_user">حذف المستخدم الخاص بك</phrase>
+    <phrase name="update_self_user">تحديث المستخدم الخاص بك</phrase>
+    <phrase name="activity_self_user">نشاط المستخدم الخاص بك</phrase>
+
+    <phrase name="security">الأمان</phrase>
+    <phrase name="groups">المجموعات</phrase>
+    <phrase name="group_name">اسم المجموعة</phrase>
+    <phrase name="group_description">وصف المجموعة</phrase>
+    <phrase name="permission_store">تخزين الصلاحية</phrase>
+    <phrase name="permission_groups">مجموعات الصلاحيات</phrase>
+    <phrase name="permission_group">مجموعة الصلاحيات</phrase>
+    <phrase name="view_manger_groups">عرض مدير المجموعات</phrase>
+    <phrase name="delete_manger_permission_group">حذف مدير مجموعة الصلاحيات</phrase>
+    <phrase name="create_manger_permission_group">إنشاء مدير مجموعة الصلاحيات</phrase>
+    <phrase name="update_manger_permission_group">تحديث مدير مجموعة الصلاحيات</phrase>
+    <phrase name="switsh_manger_permission_group_active">تفعيل مدير مجموعة الصلاحيات</phrase>
+
+    <phrase name="translation_editor">محرر الترجمة</phrase>
+    <phrase name="view_manger_translation">عرض مدير الترجمة</phrase>
+    <phrase name="delete_manger_translation">حذف مدير الترجمة</phrase>
+    <phrase name="create_manger_translation">إنشاء مدير الترجمة</phrase>
+    <phrase name="update_manger_translation">تحديث مدير الترجمة</phrase>
+
+    <phrase name="view_manger_traffic">عرض مدير المرور</phrase>
+    <phrase name="view_manger_user_traffic">عرض مدير مرور المستخدم</phrase>
+    <phrase name="delete_manger_traffic">حذف مدير المرور</phrase>
+    <phrase name="traffic_self_user">عرض مرورك الخاص</phrase>
+
+    <phrase name="view_manger_storage">عرض مدير التخزين</phrase>
+    <phrase name="delete_manger_file">حذف الملف</phrase>
+    <phrase name="upload_manger_file">تحميل الملف</phrase>
+    <phrase name="upload_self_file">تحميل ملفك الخاص</phrase>
+
+    <phrase name="record">سجل</phrase>
+    <phrase name="view_manger_logs_record">عرض سجلات السجل</phrase>
+    <phrase name="view_manger_activity_record">عرض سجلات النشاط</phrase>
+    <phrase name="view_manger_user_record">عرض سجلات المستخدم</phrase>
+
+    <phrase name="profile_image">صورة الملف الشخصي</phrase>
+    <phrase name="profile_setting">إعداد الملف الشخصي</phrase>
+    <phrase name="firstname">الاسم الأول</phrase>
+    <phrase name="lastname">الاسم الأخير</phrase>
+    <phrase name="username">اسم المستخدم</phrase>
+    <phrase name="profile_security">أمان الملف الشخصي</phrase>
+    <phrase name="security_group">مجموعة الأمان</phrase>
+    <phrase name="telnumber">رقم الهاتف</phrase>
+    <phrase name="activation">التنشيط</phrase>
+    <phrase name="password">كلمة المرور</phrase>
+    <phrase name="current_password">كلمة المرور الحالية</phrase>
+    <phrase name="new_password">كلمة مرور جديدة</phrase>
+    <phrase name="confirm_password">تأكيد كلمة المرور</phrase>
+
+    <!-- Buttons -->
+    <phrase name="upload">تحميل</phrase>
+    <phrase name="save">حفظ</phrase>
+    <phrase name="update">تحديث</phrase>
+    <phrase name="send">إرسال</phrase>
+    <phrase name="delete">حذف</phrase>
+    <phrase name="next">التالي</phrase>
+    <phrase name="prev">السابق</phrase>
+    <phrase name="submit">إرسال</phrase>
+
+    <!-- Labels -->
+    <phrase name="text">نص</phrase>
+    <phrase name="key">مفتاح</phrase>
+    <phrase name="value">قيمة</phrase>
+    <phrase name="type">نوع</phrase>
+    <phrase name="size">حجم</phrase>
+    <phrase name="owner">المالك</phrase>
+    <phrase name="status">الحالة</phrase>
+    <phrase name="code">الكود</phrase>
+    <phrase name="ip_address">عنوان IP</phrase>
+    <phrase name="url">رابط</phrase>
+    <phrase name="session">جلسة</phrase>
+    <phrase name="extension">الامتداد</phrase>
+    <phrase name="created">تم الإنشاء</phrase>
+    <phrase name="period">الفترة</phrase>
+    <phrase name="description">الوصف</phrase>
+    <phrase name="sort_subject">الفرز حسب الموضوع</phrase>
+    <phrase name="sort_code">الفرز حسب الكود</phrase>
+    <phrase name="sort_url">الفرز حسب الرابط</phrase>
+    <phrase name="sort_ip_address">الفرز حسب عنوان IP</phrase>
+    <phrase name="sort_owner">الفرز حسب المالك</phrase>
+    <phrase name="sort_extension">الفرز حسب الامتداد</phrase>
+    <phrase name="sort_name">الفرز حسب الاسم</phrase>
+    <phrase name="sort_type">الفرز حسب النوع</phrase>
+    <phrase name="sort_status">الفرز حسب الحالة</phrase>
+    <phrase name="sort_email">الفرز حسب البريد الإلكتروني</phrase>
+    <phrase name="sort_create">الفرز حسب التاريخ</phrase>
+    <phrase name="today">اليوم</phrase>
+    <phrase name="last_week">الأسبوع الماضي</phrase>
+    <phrase name="last_month">الشهر الماضي</phrase>
+
+    <phrase name="my_name">معاذ صبري</phrase>
+    <phrase name="hero_quote">أنا مطور.</phrase>
+
+    <phrase name="about">حول</phrase>
+    <phrase name="about_me">حولي</phrase>
+    <phrase name="about_summary">مبرمج ماهر ومبتكر لديه أكثر من 5 سنوات من الخبرة في مجالات متنوعة، بما في ذلك إدارة قواعد البيانات، وتطوير مواقع الويب باستخدام الأطر العملية، وإتقان لغة PHP.</phrase>
+    <phrase name="about_more">يمكنك متابعة القراءة عن </phrase>
+    <phrase name="about_more_link">هنا</phrase>
+    <phrase name="work">العمل</phrase>
+    <phrase name="city">المدينة</phrase>
+    <phrase name="age">العمر</phrase>
+    <phrase name="phone">الهاتف</phrase>
+
+    <phrase name="my_jobtitle">مطور Full Stack</phrase>
+    <phrase name="my_address">النمسا</phrase>
+    <phrase name="my_age">30</phrase>
+    <phrase name="my_email">contact@joudev.com</phrase>
+    <phrase name="my_phone">+43 </phrase>
+</language>

@@ -14,6 +14,7 @@ class Routes
         'home' => '',
         'impression' => 'impression',
         'policy' => 'policy',
+        'get_switch_language' => 'switch/language/',
     ];
 
     public static function getPath($name)
