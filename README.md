@@ -78,28 +78,29 @@ Create an `index.blade.php` file in `App\Modules\Public\views` to add the layout
 
 ### Translation Extension
 
-To use translation, call in the HTML code:
+To implement translation, utilize the following HTML code:
 
 ```html
 <h1><?= $this->label->get('word') ?></h1>
 ```
 
-where 'word' is defined in /storage/languages/en/index.xml for English. You can manually add new words to the XML file like:
+Here, 'word' refers to the key defined in `/storage/languages/en/index.xml` for the English language. To introduce new words, simply include them manually within the XML file:
 
 ```xml
 <phrase name="newword">newWord</phrase>
 ```
 
-and add new languages like `/storage/languages/xLanguage/index.xml`. Then add the new short name to existLanguages in `\app\extends\translation\loader\languageloader.php`.
+Additionally, you can include new languages by creating language files like `/storage/languages/xLanguage/index.xml`.
+Afterward, remember to integrate the new language's abbreviation into the existing language list located in `\app\extends\translation\loader\languageloader.php`
 
 ## New Updates
 
-- Removed Web class and implemented new logic for Routes.
-- Added a new class to FailResponse to return error pages.
-- Added default pages like policy and impression.
-- Updated Navbar, Footer, and index Design.
+- Eliminated the Web class and introduced a new routing logic.
+- Introduced a new FailResponse class to manage error pages.
+- Included default pages such as policy and impression.
+- Enhanced the design of Navbar, Footer, and index.
 
-Now, you have a complete simple project set up and ready to be expanded upon and updated for the next level of development.
+Your project is now fully configured and primed for further expansion and refinement in the next stages of development.
 
 <!-- ___________________________ -->
 
