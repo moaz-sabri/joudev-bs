@@ -1,39 +1,20 @@
 <main>
-    <section>
-        <div class="tab">
-            <button class="tablinks" onclick="main.openCity(event, 'home')" id="defaultOpen">home</button>
-            <button class="tablinks" onclick="main.openCity(event, 'about')">about</button>
-            <button class="tablinks" onclick="main.openCity(event, 'contact')">contact</button>
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            </div>
         </div>
-
-        <div id="home" class="tabcontent">
-            <h3>home</h3>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+            <div class="container px-5">
+                <img src="<?= LOGO ?>" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                    width="700" height="500" loading="lazy">
+            </div>
         </div>
-
-        <div id="about" class="tabcontent">
-            <h3>about</h3>
-        </div>
-
-        <div id="contact" class="tabcontent">
-            <h3>contact</h3>
-        </div>
-    </section>
-
-    <section>
-        <div id="myDIV" class="header">
-            <h2 style="margin:5px">My To Do List</h2>
-            <input type="text" id="myInput" placeholder="Title...">
-            <span onclick="main.newElement()" class="addBtn">Add</span>
-        </div>
-
-        <ul id="myUL">
-            <li>Hit the gym</li>
-            <li class="checked">Pay bills</li>
-            <li>Meet George</li>
-            <li>Buy eggs</li>
-            <li>Read a book</li>
-            <li>Organize office</li>
-        </ul>
-
-    </section>
+    </div>
 </main>

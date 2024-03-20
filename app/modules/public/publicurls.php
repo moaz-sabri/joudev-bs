@@ -13,6 +13,8 @@ class PublicUrls extends Routes
     function __construct($router)
     {
         $router->get($this->getPath('home'), new PublicController, 'index');
+        $router->get($this->getPath('impression'), new PublicController, 'impression');
+        $router->get($this->getPath('policy'), new PublicController, 'policy');
         $router->get('/api/test', new PublicApi, 'allowedPolicy');
     }
 }

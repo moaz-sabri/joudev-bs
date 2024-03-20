@@ -200,7 +200,11 @@ trait HEADLoader
     public static function styles(object $data, string $device): string
     {
 
+        // END
         $data->styles[] = '/public/static/css/main.css';
+        $data->styles[] = '/public/static/bootstrap/icons/bootstrap-icons.css';
+        $data->styles[] = '/public/static/bootstrap/css/bootstrap.min.css';
+        // Start
 
         $loaded = '';
 
@@ -269,10 +273,14 @@ trait HEADLoader
     public static function endbody(object $data, string $device): string
     {
 
+        // End
         $data->bscripts[] = [
             'src' => "/public/static/js/main.js",
             'type' => 'module'
         ];
+        $data->bscripts[] = '/public/static/bootstrap/js/bootstrap.bundle.min.js';
+        // Start
+
 
         $scripts = "";
 

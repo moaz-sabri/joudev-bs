@@ -12,6 +12,8 @@ class Routes
     // Routers
     private static $paths =  [
         'home' => '',
+        'impression' => 'impression',
+        'policy' => 'policy',
     ];
 
     public static function getPath($name)
