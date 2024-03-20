@@ -100,11 +100,10 @@ Afterward, remember to integrate the new language's abbreviation into the existi
 - Included default pages such as policy and impression.
 - Updated Navbar, Footer, and index Design with the new Bootstrap library for enhanced styling and icons.
 
-Your project is now fully configured and primed for further expansion and refinement in the next stages of development.
 
 <!-- ___________________________ -->
 
-Now, you have a complete simple project set up and ready to be expanded upon and updated for the next level of development.
+Your project is now fully configured and primed for further expansion and refinement in the next stages of development.
 
 ## Contributing
 
