@@ -25,9 +25,9 @@ define('ROOT', WEBROOT . DS . '..' . DS . 'public' . DS);
 // glouble Setting
 
 // Secret Key
-define('SECRET_KEY', 'eFTFDFWemp$WIaJJ$ABJs60aXMxEnGLa'); // Replace 'your_secret_key_here' with your actual secret key
+define('SECRET_KEY', 'SECRET_KEY'); // Replace 'your_secret_key_here' with your actual secret key
 // license
-define('LICENSE', 'WEx4UpU6AOzw8z'); // Replace 'your_license_variable_name' with your actual license variable name
+define('LICENSE', 'LICENSE'); // Replace 'your_license_variable_name' with your actual license variable name
 // Generate a nonce value for this page load
 define('NONCE', base64_encode(random_int(PHP_INT_MIN, PHP_INT_MAX)));
 
